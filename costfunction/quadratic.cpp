@@ -52,7 +52,7 @@ std::vector<double> QuadraticCostFunction::get_grad(
         grad[i] = grad[i] + b[i];
         for(int j = 0; j < n; j++)
         {
-            grad[i] = grad[i] + 0.5 * A[i][j] * params[j];
+            grad[i] = grad[i] + 2.0 * A[i][j] * params[j];
         }
     }
 
