@@ -5,6 +5,10 @@
 
 class GradientDescent
 {
+    /*
+        ただの再急降下法. 更新則は
+        x <- x - lr * grad(x)
+    */
 public:
     double lr; // learning rate
 

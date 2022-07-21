@@ -8,6 +8,7 @@ class QuadraticCostFunction : public BaseCostFunction
     /*
         2次形式のコスト関数のクラス
         cost(x) = x^T * A * x + b^T * x
+        grad(x) = 2 * A * x + b
     */
 public:
     std::vector<std::vector<double>> A;
